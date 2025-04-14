@@ -64,10 +64,6 @@ body {
   gap: 0.5rem;
 }
 
-#p-for-description {
-    text-align: justify;
- }
-
 #description-div p,
 #description-div h1 {
     margin: 0;
