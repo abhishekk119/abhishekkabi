@@ -1,12 +1,14 @@
 /* === GLOBAL STYLES === */
 html, body {
 	overflow-x: hidden;
-	margin: 0;
+	margin: 0;
+
     padding: 0;
 }
 
 body {
-  display: flex;
+  display: flex;
+
   flex-direction: column;
   background: linear-gradient(to right, #002244 0%, #00060e 100%);
   min-height: auto;
@@ -61,6 +63,10 @@ body {
   /*margin-left: auto;*/
   gap: 0.5rem;
 }
+
+#p-for-description {
+    text-align: justify;
+ }
 
 #description-div p,
 #description-div h1 {
@@ -176,9 +182,11 @@ body {
 }
 
 #footer {	
-  margin-top: 2rem; /* gap from #container2 */
+  margin-top: 2rem; /* gap from #container2 */
+
   padding: 1rem;
-  background-color: #001f3f;
+  background-color: #001f3f;
+
   flex-grow: 1;
 	}
 	
@@ -204,8 +212,10 @@ body {
     display: flex;
     /*justify-content: flex-end;*/
     /*padding-left: 6%;*/
-    flex-direction: column;
-  align-items: center;   /* Horizontally center content inside */
+    flex-direction: column;
+
+  align-items: center;   /* Horizontally center content inside */
+
   text-align: center;  
   }
 
@@ -236,7 +246,8 @@ body {
     display: flex;
    /* justify-content: flex-end; */
    /* padding-left: 8%; */
-   align-items: center;   /* Horizontally center content inside */
+   align-items: center;   /* Horizontally center content inside */
+
   text-align: center;  
    
   }
