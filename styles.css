@@ -1,0 +1,287 @@
+/* === GLOBAL STYLES === */
+html, body {
+	overflow-x: hidden;
+	margin: 0;
+    padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to right, #002244 0%, #00060e 100%);
+  min-height: auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* === CONTAINER & HEADER === */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 2rem;
+  position: relative;
+}
+
+/* === LOGO & NAME === */
+.name-and-logo {
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+}
+
+#icon {
+  height: 40px;
+}
+
+#myimage{
+  height: 25rem;
+  width: 25rem; /* Ensure it's a square */
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  /*padding-right: 15%; /* Move image inward */
+  /*margin-left: auto;*/
+}
+
+#container2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#description-div{
+  display: flex;
+  flex-direction: column;
+  /*margin-left: auto;*/
+  gap: 0.5rem;
+}
+
+#description-div p,
+#description-div h1 {
+    margin: 0;
+  }
+
+.name-at-top {
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: 'Lato', sans-serif;
+  margin-left: 0.5rem;
+}
+
+/* === NAVIGATION MENU === */
+.menu-and-btn {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding-right: 10rem;
+}
+
+.menu {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1;
+  position: relative;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  transition: width 0.3s ease;
+  transform: translateY(6px);
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+/* === LET'S TALK BUTTON === */
+#lets-talk {
+  background-color: #007FFF;
+  border: solid 1px #007FFF;
+  padding: 8px 16px;
+  border-radius: 40px;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  cursor: pointer;
+}
+
+#get-in-touch-button {
+  background-color: #007FFF;
+  border: solid 1px #007FFF;
+  padding: 8px 16px;
+  border-radius: 40px;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  cursor: pointer;
+}
+
+#p-for-name{
+  border: solid 1px #12406d;
+  background-color: #12406d;
+  width: fit-content;
+  /*padding-left: 8px;*/
+  /*padding-right: 8px;*/
+  color: white;
+  white-space: nowrap;
+}
+
+#h101{
+  color: white;
+}
+
+#h102{
+  color: #007FFF;
+}
+
+#p-for-description{
+  color: white;
+}
+
+#get-in-touch-div{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* === HAMBURGER (Hidden by Default) === */
+.hamburger {
+  display: none;
+}
+
+#footer {	
+  margin-top: 2rem; /* gap from #container2 */
+  padding: 1rem;
+  background-color: #001f3f;
+  flex-grow: 1;
+	}
+	
+#icons {
+	display: flex;
+	justify-content: center;
+	gap: 3.5rem;
+	}
+
+#icon-image{
+	height: 20px;
+	width: 20px:
+	}
+	
+#icon-image-react{
+	height: 20px;
+	width: 20px:
+	}
+
+/* === RESPONSIVE / MOBILE === */
+@media screen and (max-width: 768px) {
+  #description-div{ 
+    display: flex;
+    /*justify-content: flex-end;*/
+    /*padding-left: 6%;*/
+    flex-direction: column;
+  align-items: center;   /* Horizontally center content inside */
+  text-align: center;  
+  }
+
+#p-for-description{
+     text-align: justify;
+ }
+
+  #container2{
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse; /* This reverses the order */
+    gap: 20px; /* Adds space between the reversed items */
+  }
+  
+  .name-and-logo {
+    padding-left: 0;
+    justify-content: flex-start;
+  }
+
+  #myimage{
+    height: 15rem;
+    width: 15rem; /* Ensure it's a square */
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .image-wrapper {
+    display: flex;
+   /* justify-content: flex-end; */
+   /* padding-left: 8%; */
+   align-items: center;   /* Horizontally center content inside */
+  text-align: center;  
+   
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .menu-and-btn {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Hidden initially */
+    height: 100%;
+    width: 250px;
+    background-color: #00060e;
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  .menu-and-btn.show-menu {
+    right: 0; /* Slide into view */
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+
+  #lets-talk {
+    margin-top: 2rem;
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
