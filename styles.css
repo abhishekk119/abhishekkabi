@@ -51,10 +51,12 @@ body {
 }
 
 #container2{
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 equal columns */
+  gap: 20px;
+  padding: 20px;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
 }
 
 #description-div{
